@@ -67,7 +67,10 @@ switch (piece.toLowerCase()){
     }
      //7
 let nota = 50;
-if(nota >= 90){
+if(nota < 0 || nota > 100){
+    console.log("erro")
+}
+else if(nota >= 90){
     console.log("A");
 } 
 else if(nota >= 80){
@@ -85,6 +88,44 @@ else if(nota >= 50){
 else if(nota <50){
     console.log("F");
 }
-else if(nota < 0 || nota > 100){
-    console.log("erro");
+
+
+//8
+
+const numX = 5;
+const numY = 71;
+const numZ = 3;
+ if(numX % 2 === 0 || numY % 2 === 0 || numZ % 2 === 0){
+     console.log(true);
+ }
+ else {
+     console.log(false);
+ }
+
+ //9
+
+const numH = 50;
+const numI = 71;
+const numJ = 30;
+ if(numH % 2 === 0 || numI % 2 === 0 || numJ % 2 === 0){
+     console.log(false);
+ }
+ else {
+     console.log(true);
+ }
+
+ //10
+
+ const cust = 100;
+ const vend = 250;
+ let custTot = cust + (cust * 0.2);
+ let lucro = vend - custTot
+  if(cust < 0 || vend < 0){
+      console.log("ERRO");
+  }
+else {
+    console.log(lucro *1000);
 }
+
+//11
+
